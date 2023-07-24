@@ -1,16 +1,16 @@
 # xylophone_a_simple_musical_instrument_app
 
-A new Flutter project.
+- Xylophone - A Simple Musical Instrument App
+  Practice App that allows to play sound
 
-## Getting Started
+## Things that will be covered after completing this app
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- What are Flutter & Dart Packages?
+- How to Play Sound Across Platforms 
+- How to Play Multiple Sounds 
+- Dart Functions - Part 2
+- Updating the UI of Our App
+- Dart Functions - Part 3
+- Dart Functions Challenge
+- Refactoring Our App
+- Dart Arrow Functions
