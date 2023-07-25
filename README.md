@@ -21,6 +21,7 @@ to add packages go to **yaml file** : using audio player package as eg :
 
 then in **main.dart** -> `import 'package:audioplayers/audioplayers.dart';`
 
+
 * #### **How to Play Sound Across Platforms**
 
 using flutter package audioplayers: ^4.1.0 to play sound
@@ -31,7 +32,17 @@ using flutter package audioplayers: ^4.1.0 to play sound
 
     enableFeedback: false, // to disable the sound effect of button itself
 
-- How to Play Multiple Sounds 
+
+* #### **How to Play Multiple Sounds** 
+
+Added parametric function for playing audio sounds
+
+`  void playSound(int soundNum) {
+      final player = AudioPlayer();
+      player.play(AssetSource('note$soundNum.wav'));
+    }`
+
+
 - Dart Functions - Part 2
 - Updating the UI of Our App
 - Dart Functions - Part 3

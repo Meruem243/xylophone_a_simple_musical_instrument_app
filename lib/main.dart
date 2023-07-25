@@ -10,7 +10,21 @@ class XylophoneApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // home: AppBar(title: const Text('Test you skills'), ),
       home: Scaffold(
+        backgroundColor: Colors.teal[300],
+        appBar: AppBar(
+          backgroundColor: Colors.teal[700],
+          foregroundColor: Colors.black,
+          title: const Text(
+            'Test your Musical Skills',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          centerTitle: true,
+        ),
         body: SafeArea(
           child: Center(
             // child: TextButton(
@@ -32,21 +46,82 @@ class XylophoneApp extends StatelessWidget {
             //   ),
             //   child: const Text('click me'),
             // ),
-            child: MaterialButton(
-              onPressed: () {
-                final player = AudioPlayer();
-                player.play(AssetSource('note1.wav'));
-              },
-              enableFeedback: false, // Disable the sound effect
-              color: Colors.blue,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: const Text('Press me'),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                MaterialButton(
+                  onPressed: () {
+                    playSound(1);
+                  },
+                  enableFeedback: false, // Disable the sound effect
+                  color: Colors.red,
+
+                  child: const Text('Press me'),
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    playSound(2);
+                  },
+                  enableFeedback: false, // Disable the sound effect
+                  color: Colors.blue,
+
+                  child: const Text('Press me'),
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    playSound(3);
+                  },
+                  enableFeedback: false, // Disable the sound effect
+                  color: Colors.green,
+
+                  child: const Text('Press me'),
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    playSound(4);
+                  },
+                  enableFeedback: false, // Disable the sound effect
+                  color: Colors.yellow,
+
+                  child: const Text('Press me'),
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    playSound(5);
+                  },
+                  enableFeedback: false, // Disable the sound effect
+                  color: Colors.lightBlueAccent,
+
+                  child: const Text('Press me'),
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    playSound(6);
+                  },
+                  enableFeedback: false, // Disable the sound effect
+                  color: Colors.pink[400],
+
+                  child: const Text('Press me'),
+                ),
+                MaterialButton(
+                  onPressed: () {
+                    playSound(7);
+                  },
+                  enableFeedback: false, // Disable the sound effect
+                  color: Colors.cyan[500],
+
+                  child: const Text('Press me'),
+                ),
+              ],
             ),
           ),
         ),
       ),
     );
+  }
+
+  void playSound(int soundNum) {
+    final player = AudioPlayer();
+    player.play(AssetSource('note$soundNum.wav'));
   }
 }
