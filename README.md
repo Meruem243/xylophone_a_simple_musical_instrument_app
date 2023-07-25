@@ -6,13 +6,13 @@
 ## Things that will be covered after completing this app
 
 - What are Flutter & Dart Packages?
-    open source libraries of code /functions which can be implemented with minimum effort
-    to add libraries go to yaml file : using audio player package as eg :
-  dependencies:
-    flutter:
-      sdk: flutter
-    audioplayers: ^4.1.0
-    then in main.dart -> import 'package:audioplayers/audioplayers.dart';
+-       open source libraries of code /functions which can be implemented with minimum effort
+      to add libraries go to yaml file : using audio player package as eg :
+- dependencies:
+  flutter:
+  sdk: flutter
+  audioplayers: ^4.1.0
+- then in main.dart -> import 'package:audioplayers/audioplayers.dart';
 
 - How to Play Sound Across Platforms 
     using flutter package audioplayers: ^4.1.0 to play sound
