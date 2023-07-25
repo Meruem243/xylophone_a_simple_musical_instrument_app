@@ -37,10 +37,13 @@ using flutter package audioplayers: ^4.1.0 to play sound
 
 Added parametric function for playing audio sounds
 
-`  void playSound(int soundNum) {
+    void playSound(int soundNum) {
+
       final player = AudioPlayer();
+
       player.play(AssetSource('note$soundNum.wav'));
-    }`
+
+    }
 
 
 - Dart Functions - Part 2
