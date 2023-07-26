@@ -37,6 +37,8 @@ using flutter package audioplayers: ^4.1.0 to play sound
 
 Added parametric function for playing audio sounds
 
+Added more buttons & function to play multiple sounds on multiple buttons & added app bar
+
     void playSound(int soundNum) {
 
       final player = AudioPlayer();
@@ -46,8 +48,6 @@ Added parametric function for playing audio sounds
     }
 
 
-- Dart Functions - Part 2
-- Updating the UI of Our App
 - Dart Functions - Part 3
 - Dart Functions Challenge
 - Refactoring Our App

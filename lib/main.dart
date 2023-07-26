@@ -48,69 +48,87 @@ class XylophoneApp extends StatelessWidget {
             // ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                MaterialButton(
-                  onPressed: () {
-                    playSound(1);
-                  },
-                  enableFeedback: false, // Disable the sound effect
-                  color: Colors.red,
+                Expanded(
+                  child: MaterialButton(
+                    onPressed: () {
+                      playSound(1);
+                    },
+                    // hoverElevation: 100.0,
+                    // elevation: 30.0,
+                    // animationDuration: const Duration(seconds: 1),
+                    enableFeedback: false, // Disable the sound effect
+                    color: Colors.red,
 
-                  child: const Text('Press me'),
+                    // child: const Text('Press me'),
+                  ),
                 ),
-                MaterialButton(
-                  onPressed: () {
-                    playSound(2);
-                  },
-                  enableFeedback: false, // Disable the sound effect
-                  color: Colors.blue,
+                Expanded(
+                  child: MaterialButton(
+                    onPressed: () {
+                      playSound(2);
+                    },
+                    enableFeedback: false, // Disable the sound effect
+                    color: Colors.blue,
 
-                  child: const Text('Press me'),
+                    // child: const Text('Press me'),
+                  ),
                 ),
-                MaterialButton(
-                  onPressed: () {
-                    playSound(3);
-                  },
-                  enableFeedback: false, // Disable the sound effect
-                  color: Colors.green,
+                Expanded(
+                  child: MaterialButton(
+                    onPressed: () {
+                      playSound(3);
+                    },
+                    enableFeedback: false, // Disable the sound effect
+                    color: Colors.green,
 
-                  child: const Text('Press me'),
+                    // child: const Text('Press me'),
+                  ),
                 ),
-                MaterialButton(
-                  onPressed: () {
-                    playSound(4);
-                  },
-                  enableFeedback: false, // Disable the sound effect
-                  color: Colors.yellow,
+                Expanded(
+                  child: MaterialButton(
+                    onPressed: () {
+                      playSound(4);
+                    },
+                    enableFeedback: false, // Disable the sound effect
+                    color: Colors.yellow,
 
-                  child: const Text('Press me'),
+                    // child: const Text('Press me'),
+                  ),
                 ),
-                MaterialButton(
-                  onPressed: () {
-                    playSound(5);
-                  },
-                  enableFeedback: false, // Disable the sound effect
-                  color: Colors.lightBlueAccent,
+                Expanded(
+                  child: MaterialButton(
+                    onPressed: () {
+                      playSound(5);
+                    },
+                    enableFeedback: false, // Disable the sound effect
+                    color: Colors.lightBlueAccent,
 
-                  child: const Text('Press me'),
+                    // child: const Text('Press me'),
+                  ),
                 ),
-                MaterialButton(
-                  onPressed: () {
-                    playSound(6);
-                  },
-                  enableFeedback: false, // Disable the sound effect
-                  color: Colors.pink[400],
+                Expanded(
+                  child: MaterialButton(
+                    onPressed: () {
+                      playSound(6);
+                    },
+                    enableFeedback: false, // Disable the sound effect
+                    color: Colors.pink[400],
 
-                  child: const Text('Press me'),
+                    // child: const Text('Press me'),
+                  ),
                 ),
-                MaterialButton(
-                  onPressed: () {
-                    playSound(7);
-                  },
-                  enableFeedback: false, // Disable the sound effect
-                  color: Colors.cyan[500],
+                Expanded(
+                  child: MaterialButton(
+                    onPressed: () {
+                      playSound(7);
+                    },
+                    enableFeedback: false, // Disable the sound effect
+                    color: Colors.cyan[500],
 
-                  child: const Text('Press me'),
+                    // child: const Text('Press me'),
+                  ),
                 ),
               ],
             ),
