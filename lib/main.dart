@@ -50,90 +50,34 @@ class XylophoneApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Expanded(
-                  child: MaterialButton(
-                    onPressed: () {
-                      playSound(1);
-                    },
-                    // hoverElevation: 100.0,
-                    // elevation: 30.0,
-                    // animationDuration: const Duration(seconds: 1),
-                    enableFeedback: false, // Disable the sound effect
-                    color: Colors.red,
-
-                    // child: const Text('Press me'),
-                  ),
-                ),
-                Expanded(
-                  child: MaterialButton(
-                    onPressed: () {
-                      playSound(2);
-                    },
-                    enableFeedback: false, // Disable the sound effect
-                    color: Colors.blue,
-
-                    // child: const Text('Press me'),
-                  ),
-                ),
-                Expanded(
-                  child: MaterialButton(
-                    onPressed: () {
-                      playSound(3);
-                    },
-                    enableFeedback: false, // Disable the sound effect
-                    color: Colors.green,
-
-                    // child: const Text('Press me'),
-                  ),
-                ),
-                Expanded(
-                  child: MaterialButton(
-                    onPressed: () {
-                      playSound(4);
-                    },
-                    enableFeedback: false, // Disable the sound effect
-                    color: Colors.yellow,
-
-                    // child: const Text('Press me'),
-                  ),
-                ),
-                Expanded(
-                  child: MaterialButton(
-                    onPressed: () {
-                      playSound(5);
-                    },
-                    enableFeedback: false, // Disable the sound effect
-                    color: Colors.lightBlueAccent,
-
-                    // child: const Text('Press me'),
-                  ),
-                ),
-                Expanded(
-                  child: MaterialButton(
-                    onPressed: () {
-                      playSound(6);
-                    },
-                    enableFeedback: false, // Disable the sound effect
-                    color: Colors.pink[400],
-
-                    // child: const Text('Press me'),
-                  ),
-                ),
-                Expanded(
-                  child: MaterialButton(
-                    onPressed: () {
-                      playSound(7);
-                    },
-                    enableFeedback: false, // Disable the sound effect
-                    color: Colors.cyan[500],
-
-                    // child: const Text('Press me'),
-                  ),
-                ),
+                buildExpanded(sndNum: 1, clr: Colors.red),
+                buildExpanded(sndNum: 2, clr: Colors.orange),
+                buildExpanded(sndNum: 3, clr: Colors.yellow),
+                buildExpanded(sndNum: 4, clr: Colors.green),
+                buildExpanded(sndNum: 5, clr: Colors.blue),
+                buildExpanded(sndNum: 6, clr: Colors.pink),
+                buildExpanded(sndNum: 7, clr: Colors.purple),
               ],
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Expanded buildExpanded({required int sndNum, required Color clr}) {
+    return Expanded(
+      child: MaterialButton(
+        onPressed: () {
+          playSound(sndNum);
+        },
+        // hoverElevation: 100.0,
+        // elevation: 30.0,
+        // animationDuration: const Duration(seconds: 1),
+        enableFeedback: false, // Disable the sound effect
+        color: clr,
+
+        // child: const Text('Press me'),
       ),
     );
   }

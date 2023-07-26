@@ -47,8 +47,3 @@ Added more buttons & function to play multiple sounds on multiple buttons & adde
 
     }
 
-
-- Dart Functions - Part 3
-- Dart Functions Challenge
-- Refactoring Our App
-- Dart Arrow Functions
