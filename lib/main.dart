@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:english_words/english_words.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 void main() => runApp(const XylophoneApp());
@@ -10,7 +9,6 @@ class XylophoneApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // home: AppBar(title: const Text('Test you skills'), ),
       home: Scaffold(
         backgroundColor: Colors.teal[300],
         appBar: AppBar(
@@ -27,25 +25,6 @@ class XylophoneApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Center(
-            // child: TextButton(
-            //   onPressed: () {
-            //     final player = AudioPlayer();
-            //     // player.setSourceAsset('note4.wav');
-            //     player.play(AssetSource('note7.wav'));
-            //     // print('button got pressed');
-            //
-            //     // player.loadAsset(AssetSource('note1.wav'));
-            //     // Null;
-            //     // await player.play('note1.wav');
-            //     // player.play(Source : );
-            //     // await player.setSource(
-            //     //   AssetSource('note1.wav'),
-            //   },
-            //   style: const ButtonStyle(
-            //     enableFeedback: false, // Disable the sound effect
-            //   ),
-            //   child: const Text('click me'),
-            // ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -71,13 +50,8 @@ class XylophoneApp extends StatelessWidget {
         onPressed: () {
           playSound(sndNum);
         },
-        // hoverElevation: 100.0,
-        // elevation: 30.0,
-        // animationDuration: const Duration(seconds: 1),
-        enableFeedback: false, // Disable the sound effect
+        enableFeedback: false,
         color: clr,
-
-        // child: const Text('Press me'),
       ),
     );
   }

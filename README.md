@@ -47,3 +47,29 @@ Added more buttons & function to play multiple sounds on multiple buttons & adde
 
     }
 
+
+
+* #### **Refactoring And adding return type function**
+
+
+    Expanded buildExpanded({required int sndNum, required Color clr}) {
+
+      return Expanded(
+
+        child: MaterialButton(
+
+          onPressed: () {
+
+            playSound(sndNum);
+
+          },
+
+          enableFeedback: false,
+
+          color: clr,
+
+        ),
+
+      );
+
+    }
